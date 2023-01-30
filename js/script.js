@@ -170,13 +170,17 @@ btnWrapp.appendChild(registerBtn)
 
 
 const sectionExplore = document.createElement("section")
+sectionExplore.style.display = 'flex'
+sectionExplore.style.flexWrap = 'wrap'
+sectionExplore.style.justifyContent = 'space-between'
 sectionExplore.style.maxWidth = '1366px'
-sectionExplore.style.padding = '0 20px'
+sectionExplore.style.padding = '45px 20px'
 sectionExplore.style.margin = '0 auto'
 document.body.appendChild(sectionExplore)
 
 
 const wrappExplore = document.createElement("div")
+wrappExplore.style.maxWidth = '558px'
 sectionExplore.appendChild(wrappExplore)
 
 const sectionExploreH1 = document.createElement("h1")
@@ -209,20 +213,358 @@ exploreFormTitle.style.padding = '0 0 10px 0'
 exploreForm.appendChild(exploreFormTitle)
 
 
+const wrapperSelect = document.createElement("div")
+wrapperSelect.style.display = 'flex'
+wrapperSelect.style.flexWrap = 'wrap'
+wrapperSelect.style.justifyContent = 'flex-start'
+wrapperSelect.style.maxWidth = '506px'
+wrappExplore.appendChild(wrapperSelect)
+
+
+
 const selectExploreForm = document.createElement("select")
-exploreForm.appendChild(selectExploreForm)
+selectExploreForm.style.fontFamily = 'Inter, sans-serif'
+selectExploreForm.style.fontWeight = '400'
+selectExploreForm.style.fontSize = '15px'
+selectExploreForm.style.color = '#D7D7D7'
+selectExploreForm.style.border = '1px solid #D7D7D7'
+selectExploreForm.style.borderRadius = '8px'
+selectExploreForm.style.outline = 'none'
+selectExploreForm.style.padding = '14px 64px'
+selectExploreForm.style.margin = '15px'
+wrapperSelect.appendChild(selectExploreForm)
 
-const optionExploreSelect1 = document.createElement("option")
-optionExploreSelect1.innerHTML = 'Location'
-selectExploreForm.appendChild(optionExploreSelect1)
+const optionExploreSelectLocation1 = document.createElement("option")
+optionExploreSelectLocation1.innerHTML = 'Location'
+selectExploreForm.appendChild(optionExploreSelectLocation1)
 
-const optionExploreSelect2 = document.createElement("option")
-optionExploreSelect2.innerHTML = 'Location2'
-selectExploreForm.appendChild(optionExploreSelect2)
+const optionExploreSelectLocation2 = document.createElement("option")
+optionExploreSelectLocation2.innerHTML = 'Location2'
+selectExploreForm.appendChild(optionExploreSelectLocation2)
 
-const optionExploreSelect3 = document.createElement("option")
-optionExploreSelect3.innerHTML = 'Location3'
-selectExploreForm.appendChild(optionExploreSelect3)
+const optionExploreSelectLocation3 = document.createElement("option")
+optionExploreSelectLocation3.innerHTML = 'Location3'
+selectExploreForm.appendChild(optionExploreSelectLocation3)
+
+
+
+const selectExploreFormActivity = document.createElement("select")
+selectExploreFormActivity.style.fontFamily = 'Inter, sans-serif'
+selectExploreFormActivity.style.fontWeight = '400'
+selectExploreFormActivity.style.fontSize = '15px'
+selectExploreFormActivity.style.color = '#D7D7D7'
+selectExploreFormActivity.style.border = '1px solid #D7D7D7'
+selectExploreFormActivity.style.borderRadius = '8px'
+selectExploreFormActivity.style.outline = 'none'
+selectExploreFormActivity.style.padding = '14px 68px'
+selectExploreFormActivity.style.margin = '15px'
+wrapperSelect.appendChild(selectExploreFormActivity)
+
+const optionExploreSelectActivity1 = document.createElement("option")
+optionExploreSelectActivity1.innerHTML = 'Activity'
+selectExploreFormActivity.appendChild(optionExploreSelectActivity1)
+
+const optionExploreSelectActivity2 = document.createElement("option")
+optionExploreSelectActivity2.innerHTML = 'Activity2'
+selectExploreFormActivity.appendChild(optionExploreSelectActivity2)
+
+const optionExploreSelectActivity3 = document.createElement("option")
+optionExploreSelectActivity3.innerHTML = 'Activity3'
+selectExploreFormActivity.appendChild(optionExploreSelectActivity3)
+
+
+
+const selectExploreFormGrade = document.createElement("select")
+selectExploreFormGrade.style.fontFamily = 'Inter, sans-serif'
+selectExploreFormGrade.style.fontWeight = '400'
+selectExploreFormGrade.style.fontSize = '15px'
+selectExploreFormGrade.style.color = '#D7D7D7'
+selectExploreFormGrade.style.border = '1px solid #D7D7D7'
+selectExploreFormGrade.style.borderRadius = '8px'
+selectExploreFormGrade.style.outline = 'none'
+selectExploreFormGrade.style.padding = '14px 73px'
+selectExploreFormGrade.style.margin = '15px'
+wrapperSelect.appendChild(selectExploreFormGrade)
+
+const optionExploreSelectGrade1 = document.createElement("option")
+optionExploreSelectGrade1.innerHTML = 'Grade'
+selectExploreFormGrade.appendChild(optionExploreSelectGrade1)
+
+const optionExploreSelectGrade2 = document.createElement("option")
+optionExploreSelectGrade2.innerHTML = 'Grade1'
+selectExploreFormGrade.appendChild(optionExploreSelectGrade2)
+
+const optionExploreSelectGrade3 = document.createElement("option")
+optionExploreSelectGrade3.innerHTML = 'Grade2'
+selectExploreFormGrade.appendChild(optionExploreSelectGrade3)
+
+
+
+const selectExploreFormDate = document.createElement("select")
+selectExploreFormDate.style.fontFamily = 'Inter, sans-serif'
+selectExploreFormDate.style.fontWeight = '400'
+selectExploreFormDate.style.fontSize = '15px'
+selectExploreFormDate.style.color = '#D7D7D7'
+selectExploreFormDate.style.border = '1px solid #D7D7D7'
+selectExploreFormDate.style.borderRadius = '8px'
+selectExploreFormDate.style.outline = 'none'
+selectExploreFormDate.style.padding = '14px 78px'
+selectExploreFormDate.style.margin = '15px'
+wrapperSelect.appendChild(selectExploreFormDate)
+
+const optionExploreSelectDate1 = document.createElement("option")
+optionExploreSelectDate1.innerHTML = 'Date'
+selectExploreFormDate.appendChild(optionExploreSelectDate1)
+
+const optionExploreSelectDate2 = document.createElement("option")
+optionExploreSelectDate2.innerHTML = 'Date1'
+selectExploreFormDate.appendChild(optionExploreSelectDate2)
+
+const optionExploreSelectDate3 = document.createElement("option")
+optionExploreSelectDate3.innerHTML = 'Date2'
+selectExploreFormDate.appendChild(optionExploreSelectDate3)
+
+
+const exploreBtn = document.createElement("div")
+exploreBtn.innerHTML = 'Explore'
+exploreBtn.style.background = '#fb8f1d'
+exploreBtn.style.fontFamily = 'Mulish, sans-serif'
+exploreBtn.style.fontWeight = '700'
+exploreBtn.style.fontSize = '17px'
+exploreBtn.style.color = '#fff'
+exploreBtn.style.padding = '15px 65px'
+exploreBtn.style.margin = '15px 0 0 15px'
+exploreBtn.style.borderRadius = '8px'
+exploreBtn.style.border = '1px solid transparent'
+exploreBtn.style.transition = '0.4s'
+exploreBtn.onmouseover = function(event) {
+    let target = event.target;
+    target.style.background = '#fff';
+    target.style.color = '#FB8F1D'
+    target.style.border = '1px solid #FB8F1D'
+};
+exploreBtn.onmouseout = function(event) {
+    let target = event.target;
+    target.style.background = '#FB8F1D';
+    target.style.color = '#fff'
+};
+wrapperSelect.appendChild(exploreBtn)
+
+
+const wrappForImage = document.createElement("div")
+wrappForImage.style.maxWidth = '700px'
+wrappForImage.style.maxHeight = '640px'
+sectionExplore.appendChild(wrappForImage)
+
+const wrappImage = document.createElement("img")
+wrappImage.setAttribute("src", "img/f1.jpg")
+wrappImage.setAttribute("alt", "")
+wrappImage.style.width = '100%'
+wrappImage.style.height = '100%'
+wrappImage.style.objectFit = 'contain'
+wrappForImage.appendChild(wrappImage)
+
+
+
+/* Section Way Explore */
+const sectionWayExplore = document.createElement("section")
+sectionWayExplore.style.maxWidth = '1366px'
+sectionWayExplore.style.margin = '0 auto'
+sectionWayExplore.style.padding = '45px 20px'
+sectionWayExplore.style.display = 'flex'
+sectionWayExplore.style.justifyContent = 'space-between'
+sectionWayExplore.style.alignItems = 'center'
+sectionWayExplore.style.flexWrap = 'wrap'
+document.body.appendChild(sectionWayExplore)
+
+const wrappImageForWay = document.createElement("div")
+wrappImageForWay.style.maxWidth = '660px'
+wrappImageForWay.style.maxHeight = '535px'
+sectionWayExplore.appendChild(wrappImageForWay)
+
+const imageForWrappWay = document.createElement("img")
+imageForWrappWay.setAttribute("src", "img/f2.jpg")
+imageForWrappWay.setAttribute("alt", "")
+imageForWrappWay.style.width = '100%'
+imageForWrappWay.style.height = '100%'
+imageForWrappWay.style.objectFit = 'contain'
+wrappImageForWay.appendChild(imageForWrappWay)
+
+
+const wrappWayText = document.createElement("div")
+wrappWayText.style.maxWidth = '482px'
+sectionWayExplore.appendChild(wrappWayText)
+
+const wayTextTitle = document.createElement("p")
+wayTextTitle.innerHTML = 'A new way to explore the world '
+wayTextTitle.style.fontFamily = 'Playfair Display, sans-serif'
+wayTextTitle.style.fontWeight = '700'
+wayTextTitle.style.fontSize = '36px'
+wayTextTitle.style.color = '#000'
+wrappWayText.appendChild(wayTextTitle)
+
+const wayTextText = document.createElement("p")
+wayTextText.innerHTML = 'For decades travellers have reached for Lonely \
+Planet books when looking to plan and execute their perfect trip, \
+but now, they can also let Lonely Planet Experiences lead the way'
+wayTextText.style.fontFamily = 'Mulish, sans-serif'
+wayTextText.style.fontWeight = '300'
+wayTextText.style.fontSize = '17px'
+wayTextText.style.color = '#7D7987'
+wrappWayText.appendChild(wayTextText)
+
+
+const wayTextBtn = document.createElement("a")
+wayTextBtn.setAttribute("href", "#")
+wayTextBtn.innerHTML = 'Learn more'
+wayTextBtn.style.fontFamily = 'Inter, sans-serif'
+wayTextBtn.style.fontWeight = '600'
+wayTextBtn.style.fontSize = '16px'
+wayTextBtn.style.color = '#fff'
+wayTextBtn.style.background = '#FB8F1D'
+wayTextBtn.style.borderRadius = '8px'
+wayTextBtn.style.display = 'inline-block'
+wayTextBtn.style.textDecoration = 'none'
+wayTextBtn.style.padding = '14px 39px'
+wayTextBtn.style.margin = '39px 0 0 0'
+wayTextBtn.style.transition = '0.4s'
+wayTextBtn.style.border = '1px solid transparent' 
+wayTextBtn.onmouseover = function(event) {
+    let target = event.target;
+    target.style.background = '#fff';
+    target.style.color = '#FB8F1D'
+    target.style.border = '1px solid #FB8F1D'
+};
+wayTextBtn.onmouseout = function(event) {
+    let target = event.target;
+    target.style.background = '#FB8F1D';
+    target.style.color = '#fff'
+};
+wrappWayText.appendChild(wayTextBtn)
+
+
+
+const sectionFeatured = document.createElement("section")
+sectionFeatured.style.maxWidth = '1366px'
+sectionFeatured.style.margin = '0 auto'
+sectionFeatured.style.display = 'flex'
+sectionFeatured.style.flexDirection = 'column'
+sectionFeatured.style.padding = '45px 20px'
+document.body.appendChild(sectionFeatured)
+
+
+const wrappFeaturedItems = document.createElement("div")
+wrappFeaturedItems.style.display = 'flex'
+wrappFeaturedItems.style.flexWrap = 'wrap'
+wrappFeaturedItems.style.justifyContent = 'space-between'
+wrappFeaturedItems.style.width = '100%'
+sectionFeatured.appendChild(wrappFeaturedItems)
+
+const featuredTitle = document.createElement("div")
+featuredTitle.innerHTML = 'Featured destinations'
+featuredTitle.style.fontFamily = 'Playfair Display, sans-serif'
+featuredTitle.style.fontWeight = '700'
+featuredTitle.style.fontSize = '36px'
+featuredTitle.style.color = '#000'
+wrappFeaturedItems.appendChild(featuredTitle)
+
+
+const linkFeatured = document.createElement("a")
+linkFeatured.setAttribute("href", "#")
+linkFeatured.innerHTML = 'View all'
+linkFeatured.style.fontFamily = 'Inter, sans-serif'
+linkFeatured.style.fontWeight = '600'
+linkFeatured.style.fontSize = '17px'
+linkFeatured.style.color = '#FB8F1D'
+linkFeatured.style.textDecoration = 'none'
+wrappFeaturedItems.appendChild(linkFeatured)
+
+
+const linkVector = document.createElement("img")
+linkVector.setAttribute("src", "img/v1.png")
+linkVector.style.margin = '0 0 0 11px'
+linkFeatured.appendChild(linkVector)
+
+
+
+const wrapperFeatured = document.createElement("div")
+wrapperFeatured.style.padding = '55px 0 55px 0'
+wrapperFeatured.style.display = 'flex'
+wrapperFeatured.style.flexWrap = 'wrap'
+wrapperFeatured.style.justifyContent = 'space-between'
+sectionFeatured.appendChild(wrapperFeatured)
+
+
+const cards = document.createElement("div")
+cards.style.maxWidth = '262px'
+cards.style.maxHeight = '335px'
+cards.style.overflow = 'hidden'
+cards.style.borderRadius = '8px'
+wrapperFeatured.appendChild(cards)
+
+const cardsImg = document.createElement("img")
+cardsImg.setAttribute("src", "img/z1.png")
+cardsImg.style.width = '100%'
+cardsImg.style.height = '100%'
+cardsImg.style.objectFit = 'contain'
+cards.appendChild(cardsImg)
+
+
+
+const cards2 = document.createElement("div")
+cards2.style.maxWidth = '262px'
+cards2.style.maxHeight = '335px'
+cards2.style.overflow = 'hidden'
+cards2.style.borderRadius = '8px'
+wrapperFeatured.appendChild(cards2)
+
+const cardsImg2 = document.createElement("img")
+cardsImg2.setAttribute("src", "img/z2.png")
+cardsImg2.style.width = '100%'
+cardsImg2.style.height = '100%'
+cardsImg2.style.objectFit = 'contain'
+cards2.appendChild(cardsImg2)
+
+
+
+const cards3 = document.createElement("div")
+cards3.style.maxWidth = '262px'
+cards3.style.maxHeight = '335px'
+cards3.style.overflow = 'hidden'
+cards3.style.borderRadius = '8px'
+wrapperFeatured.appendChild(cards3)
+
+const cardsImg3 = document.createElement("img")
+cardsImg3.setAttribute("src", "img/z3.png")
+cardsImg3.style.width = '100%'
+cardsImg3.style.height = '100%'
+cardsImg3.style.objectFit = 'contain'
+cards3.appendChild(cardsImg3)
+
+
+
+const cards4 = document.createElement("div")
+cards4.style.maxWidth = '262px'
+cards4.style.maxHeight = '335px'
+cards4.style.overflow = 'hidden'
+cards4.style.borderRadius = '8px'
+wrapperFeatured.appendChild(cards4)
+
+const cardsImg4 = document.createElement("img")
+cardsImg4.setAttribute("src", "img/z4.png")
+cardsImg4.style.width = '100%'
+cardsImg4.style.height = '100%'
+cardsImg4.style.objectFit = 'contain'
+cards4.appendChild(cardsImg4)
+
+
+
+
+
+
+
+
+
 
 
 
