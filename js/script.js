@@ -500,7 +500,33 @@ cards.style.maxWidth = '262px'
 cards.style.maxHeight = '335px'
 cards.style.overflow = 'hidden'
 cards.style.borderRadius = '8px'
+cards.style.position = 'relative'
 wrapperFeatured.appendChild(cards)
+
+const cardsTextWrapp = document.createElement("div")
+cardsTextWrapp.style.position = 'absolute'
+cardsTextWrapp.style.bottom = '0'
+cardsTextWrapp.style.left = '0'
+cardsTextWrapp.style.background = '#fff'
+cardsTextWrapp.style.maxWidth = '108px'
+cardsTextWrapp.style.borderTopRightRadius = '8px'
+cardsTextWrapp.style.padding = '8px 12px'
+cards.appendChild(cardsTextWrapp)
+const cardsTextContainer = document.createElement("div")
+cardsTextContainer.innerHTML = 'Raja Ampat'
+cardsTextContainer.style.fontFamily = 'Inter, sans-serif'
+cardsTextContainer.style.fontWeight = '600'
+cardsTextContainer.style.fontSize = '17px'
+cardsTextContainer.style.color = '#042521'
+cardsTextWrapp.appendChild(cardsTextContainer)
+const cardsSpanContainer = document.createElement("span")
+cardsSpanContainer.innerHTML = 'Indonesia'
+cardsSpanContainer.style.fontFamily = 'Inter, sans-serif'
+cardsSpanContainer.style.fontWeight = '300'
+cardsSpanContainer.style.fontSize = '17px'
+cardsSpanContainer.style.color = '#7D7987;'
+cardsTextWrapp.appendChild(cardsSpanContainer)
+
 
 const cardsImg = document.createElement("img")
 cardsImg.setAttribute("src", "img/z1.png")
@@ -516,7 +542,32 @@ cards2.style.maxWidth = '262px'
 cards2.style.maxHeight = '335px'
 cards2.style.overflow = 'hidden'
 cards2.style.borderRadius = '8px'
+cards2.style.position = 'relative'
 wrapperFeatured.appendChild(cards2)
+
+const cardsTextWrapp2 = document.createElement("div")
+cardsTextWrapp2.style.position = 'absolute'
+cardsTextWrapp2.style.bottom = '0'
+cardsTextWrapp2.style.left = '0'
+cardsTextWrapp2.style.background = '#fff'
+cardsTextWrapp2.style.maxWidth = '108px'
+cardsTextWrapp2.style.borderTopRightRadius = '8px'
+cardsTextWrapp2.style.padding = '8px 12px'
+cards2.appendChild(cardsTextWrapp2)
+const cardsTextContainer2 = document.createElement("div")
+cardsTextContainer2.innerHTML = 'Fanjingshan'
+cardsTextContainer2.style.fontFamily = 'Inter, sans-serif'
+cardsTextContainer2.style.fontWeight = '600'
+cardsTextContainer2.style.fontSize = '17px'
+cardsTextContainer2.style.color = '#042521'
+cardsTextWrapp2.appendChild(cardsTextContainer2)
+const cardsSpanContainer2 = document.createElement("span")
+cardsSpanContainer2.innerHTML = 'China'
+cardsSpanContainer2.style.fontFamily = 'Inter, sans-serif'
+cardsSpanContainer2.style.fontWeight = '300'
+cardsSpanContainer2.style.fontSize = '17px'
+cardsSpanContainer2.style.color = '#7D7987;'
+cardsTextWrapp2.appendChild(cardsSpanContainer2)
 
 const cardsImg2 = document.createElement("img")
 cardsImg2.setAttribute("src", "img/z2.png")
@@ -532,7 +583,33 @@ cards3.style.maxWidth = '262px'
 cards3.style.maxHeight = '335px'
 cards3.style.overflow = 'hidden'
 cards3.style.borderRadius = '8px'
+cards3.style.position = 'relative'
 wrapperFeatured.appendChild(cards3)
+
+const cardsTextWrapp3 = document.createElement("div")
+cardsTextWrapp3.style.position = 'absolute'
+cardsTextWrapp3.style.bottom = '0'
+cardsTextWrapp3.style.left = '0'
+cardsTextWrapp3.style.background = '#fff'
+cardsTextWrapp3.style.maxWidth = '108px'
+cardsTextWrapp3.style.borderTopRightRadius = '8px'
+cardsTextWrapp3.style.padding = '8px 12px'
+cards3.appendChild(cardsTextWrapp3)
+const cardsTextContainer3 = document.createElement("div")
+cardsTextContainer3.innerHTML = 'Vevey'
+cardsTextContainer3.style.fontFamily = 'Inter, sans-serif'
+cardsTextContainer3.style.fontWeight = '600'
+cardsTextContainer3.style.fontSize = '17px'
+cardsTextContainer3.style.color = '#042521'
+cardsTextWrapp3.appendChild(cardsTextContainer3)
+const cardsSpanContainer3 = document.createElement("span")
+cardsSpanContainer3.innerHTML = 'Switzerland'
+cardsSpanContainer3.style.fontFamily = 'Inter, sans-serif'
+cardsSpanContainer3.style.fontWeight = '300'
+cardsSpanContainer3.style.fontSize = '17px'
+cardsSpanContainer3.style.color = '#7D7987;'
+cardsTextWrapp3.appendChild(cardsSpanContainer3)
+
 
 const cardsImg3 = document.createElement("img")
 cardsImg3.setAttribute("src", "img/z3.png")
@@ -548,7 +625,31 @@ cards4.style.maxWidth = '262px'
 cards4.style.maxHeight = '335px'
 cards4.style.overflow = 'hidden'
 cards4.style.borderRadius = '8px'
+cards4.style.position = 'relative'
 wrapperFeatured.appendChild(cards4)
+const cardsTextWrapp4 = document.createElement("div")
+cardsTextWrapp4.style.position = 'absolute'
+cardsTextWrapp4.style.bottom = '0'
+cardsTextWrapp4.style.left = '0'
+cardsTextWrapp4.style.background = '#fff'
+cardsTextWrapp4.style.maxWidth = '108px'
+cardsTextWrapp4.style.borderTopRightRadius = '8px'
+cardsTextWrapp4.style.padding = '8px 12px'
+cards4.appendChild(cardsTextWrapp4)
+const cardsTextContainer4 = document.createElement("div")
+cardsTextContainer4.innerHTML = 'Skadar'
+cardsTextContainer4.style.fontFamily = 'Inter, sans-serif'
+cardsTextContainer4.style.fontWeight = '600'
+cardsTextContainer4.style.fontSize = '17px'
+cardsTextContainer4.style.color = '#042521'
+cardsTextWrapp4.appendChild(cardsTextContainer4)
+const cardsSpanContainer4 = document.createElement("span")
+cardsSpanContainer4.innerHTML = 'Montenegro'
+cardsSpanContainer4.style.fontFamily = 'Inter, sans-serif'
+cardsSpanContainer4.style.fontWeight = '300'
+cardsSpanContainer4.style.fontSize = '17px'
+cardsSpanContainer4.style.color = '#7D7987;'
+cardsTextWrapp4.appendChild(cardsSpanContainer4)
 
 const cardsImg4 = document.createElement("img")
 cardsImg4.setAttribute("src", "img/z4.png")
@@ -558,22 +659,82 @@ cardsImg4.style.objectFit = 'contain'
 cards4.appendChild(cardsImg4)
 
 
+/* Section sunny */
 
 
+const sectionSunny = document.createElement("section")
+sectionSunny.style.maxWidth = '1366px'
+sectionSunny.style.margin = '0 auto'
+sectionSunny.style.padding = '45px 20px'
+sectionSunny.style.display = 'flex'
+sectionSunny.style.justifyContent = 'space-between'
+sectionSunny.style.flexWrap = 'wrap'
+document.body.appendChild(sectionSunny)
+
+const sunnyTextWrapp = document.createElement("div")
+sunnyTextWrapp.style.maxWidth = '450px'
+sectionSunny.appendChild(sunnyTextWrapp)
+
+const sunnyText = document.createElement("p")
+sunnyText.innerHTML = 'Guides by Thousand Sunny'
+sunnyText.style.fontFamily = 'Playfair Display, sans-serif'
+sunnyText.style.fontWeight = '700'
+sunnyText.style.fontSize = '36px'
+sunnyText.style.color = '#000'
+sunnyTextWrapp.appendChild(sunnyText)
 
 
+const sunnyTextText = document.createElement("p")
+sunnyTextText.innerHTML = 'Packed with tips and advice from our\
+on-the-ground experts, our city guides app (iOS and Android) is \
+the ultimate resource before and during a trip.'
+sunnyTextText.style.fontFamily = 'Mulish, sans-serif'
+sunnyTextText.style.fontWeight = '300'
+sunnyTextText.style.fontSize = '17px'
+sunnyTextText.style.color = '#7D7987'
+sunnyTextText.style.lineHeight = '30px'
+sunnyTextWrapp.appendChild(sunnyTextText)
+
+const sunnyBtn = document.createElement("a")
+sunnyBtn.setAttribute("href", "#")
+sunnyBtn.innerHTML = 'Download'
+sunnyBtn.style.borderRadius = '8px'
+sunnyBtn.style.fontFamily = 'Inter, sans-serif'
+sunnyBtn.style.fontWeight = '600'
+sunnyBtn.style.fontSize = '16px'
+sunnyBtn.style.color = '#fff'
+sunnyBtn.style.background = '#FB8F1D'
+sunnyBtn.style.textDecoration = 'none'
+sunnyBtn.style.padding = '14px 44px'
+sunnyBtn.style.display = 'inline-block'
+sunnyBtn.style.margin = '39px 0 0 0'
+sunnyBtn.style.transition = '0.4s'
+sunnyBtn.style.border = '1px solid transparent'
+sunnyBtn.onmouseover = function(event) {
+    let target = event.target;
+    target.style.background = '#fff';
+    target.style.color = '#FB8F1D'
+    target.style.border = '1px solid #FB8F1D'
+};
+sunnyBtn.onmouseout = function(event) {
+    let target = event.target;
+    target.style.background = '#FB8F1D';
+    target.style.color = '#fff'
+};
+sunnyTextWrapp.appendChild(sunnyBtn)
 
 
+const sunnyWrappImage = document.createElement("div")
+sunnyWrappImage.style.maxWidth = '600px'
+sunnyWrappImage.style.maxHeight = '542px'
+sectionSunny.appendChild(sunnyWrappImage)
 
-
-
-
-
-
-
-
-
-
+const sunnyImage = document.createElement("img")
+sunnyImage.setAttribute("src", "img/f3.png")
+sunnyImage.style.width = '100%'
+sunnyImage.style.height = '100%'
+sunnyImage.style.objectFit = 'contain'
+sunnyWrappImage.appendChild(sunnyImage)
 
 
 
